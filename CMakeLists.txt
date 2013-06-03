@@ -13,8 +13,8 @@ cmake_minimum_required(VERSION 2.6)
 project(jk2)
 
 set(CMAKE_BUILD_TYPE "RELEASE")
-set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -Wno-write-strings -Wno-pointer-arith -Wno-multichar -Wno-int-to-pointer-cast -Wno-enum-compare -Wno-cpp -fexceptions -m32 -ffast-math -DLINUX -DNDEBUG")
-set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -Wno-write-strings -Wno-conversion-null -Wno-pointer-arith -Wno-multichar -Wno-int-to-pointer-cast -Wno-enum-compare -Wno-cpp -fexceptions -m32 -ffast-math -fno-operator-names -DLINUX -DNDEBUG")
+set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -Wno-write-strings -Wno-pointer-arith -Wno-multichar -Wno-int-to-pointer-cast -fexceptions -m32 -ffast-math -DLINUX -DNDEBUG -DFINAL_BUILD")
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -Wno-write-strings -Wno-pointer-arith -Wno-multichar -Wno-enum-compare -Wno-invalid-offsetof -fexceptions -m32 -ffast-math -fno-operator-names -DLINUX -DNDEBUG -DFINAL_BUILD")
 
 set(GAME_SOURCE_FILES
 	code/cgame/FX_ATSTMain.cpp

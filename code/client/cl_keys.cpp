@@ -1331,7 +1331,7 @@ void CL_KeyEvent (int key, qboolean down, unsigned time) {
 			return;
 		}
 
-#ifdef FINAL_BUILD
+#ifdef FINAL_BUILD_CONSOLE
 		if (!(cls.keyCatchers & KEYCATCH_CONSOLE) && !kg.keys[A_SHIFT].down )	//we're not in the console
 		{//so we require the control keys to get in
 			return;
